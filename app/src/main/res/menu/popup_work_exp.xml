@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/it1"
+        android:title="Chưa có kinh nghiệm"/>
+    <item android:id="@+id/it2"
+        android:title="Dưới 1 năm"/>
+    <item android:id="@+id/it3"
+        android:title="1 năm"/>
+    <item android:id="@+id/it4"
+        android:title="2 năm"/>
+    <item android:id="@+id/it5"
+        android:title="3 năm"/>
+    <item android:id="@+id/it6"
+        android:title="Trên 3 năm"/>
+</menu>

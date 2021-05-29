@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header_card"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/img_arrow_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/arrow_left_blue"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/txt_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng ký tài khoản nhà tuyển dụng"
+                android:textColor="@color/blue"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_400" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_card">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="30dp">
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:background="@drawable/conner_img"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/no_avatar" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Chọn logo công ty*"
+                android:textColor="@color/blue"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:focusable="false"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:importantForAutofill="no"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="@string/email"
+                android:textColor="@color/blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:boxBackgroundMode="none"
+                app:counterEnabled="false"
+                app:hintEnabled="false"
+                android:layout_gravity="center_vertical"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+                app:hintTextColor="@android:color/transparent"
+                app:startIconDrawable="@drawable/email_ic"
+                app:startIconTint="@color/blue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_email_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/bg_text_box"
+                    android:hint="@string/email"
+                    android:textColor="@color/dark_blue"
+                    android:textColorHint="@color/blue"
+                    android:textCursorDrawable="@drawable/text_cursor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="@string/password"
+                android:textColor="@color/blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+                app:hintTextColor="@android:color/transparent"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/blue"
+                app:startIconDrawable="@drawable/pass_ic"
+                app:startIconTint="@color/blue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_pass_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/bg_text_box"
+                    android:hint="@string/more_than_six"
+                    android:inputType="textPassword"
+                    android:textColor="@color/dark_blue"
+                    android:textColorHint="@color/blue"
+                    android:textCursorDrawable="@drawable/text_cursor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="@string/confirm_pass"
+                android:textColor="@color/blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingBottom="5dp"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+                app:hintTextColor="@android:color/transparent"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/blue"
+                app:startIconDrawable="@drawable/pass_ic"
+                app:startIconTint="@color/blue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_confirm_pass_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/bg_text_box"
+                    android:hint="@string/confirm_pass"
+                    android:textSize="15sp"
+                    android:inputType="textPassword"
+                    android:textColor="@color/dark_blue"
+                    android:textColorHint="@color/blue"
+                    android:textCursorDrawable="@drawable/text_cursor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="Họ tên"
+                android:textColor="@color/blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+                app:hintTextColor="@android:color/transparent"
+                app:startIconDrawable="@drawable/list_name_ic"
+                app:startIconTint="@color/blue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_name_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/bg_text_box"
+                    android:hint="Nhập tên công ty"
+                    android:textSize="15sp"
+                    android:textColor="@color/dark_blue"
+                    android:textColorHint="@color/blue"
+                    android:textCursorDrawable="@drawable/text_cursor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="Số điện thoại"
+                android:textColor="@color/blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+                app:hintTextColor="@android:color/transparent"
+                app:startIconDrawable="@drawable/phone_ic"
+                app:startIconTint="@color/blue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_num_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/bg_text_box"
+                    android:hint="Nhập số điện thoại"
+                    android:textSize="15sp"
+                    android:inputType="number"
+                    android:textColor="@color/dark_blue"
+                    android:textColorHint="@color/blue"
+                    android:textCursorDrawable="@drawable/text_cursor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="Tỉnh/Thành phố"
+                android:textColor="@color/blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+                app:hintTextColor="@android:color/transparent"
+                app:startIconDrawable="@drawable/build_ic"
+                app:startIconTint="@color/blue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_city_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_text_box"
+                    android:drawableEnd="@drawable/arrow_down_gray"
+                    android:drawableRight="@drawable/arrow_down_gray"
+                    android:focusable="false"
+                    android:hint="Chọn tỉnh/thành phố"
+                    android:paddingStart="10dp"
+                    android:textSize="15sp"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="15dp"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/dark_blue"
+                    android:textColorHint="@color/blue"
+                    android:textCursorDrawable="@drawable/text_cursor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="Tỉnh/Thành phố"
+                android:textColor="@color/blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+                app:hintTextColor="@android:color/transparent"
+                app:startIconDrawable="@drawable/build_ic"
+                app:startIconTint="@color/blue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_district_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/bg_text_box"
+                    android:drawableEnd="@drawable/arrow_down_gray"
+                    android:drawableRight="@drawable/arrow_down_gray"
+                    android:focusable="false"
+                    android:textSize="15sp"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="15dp"
+                    android:paddingRight="15dp"
+                    android:hint="Chọn quận/huyện"
+                    android:textColor="@color/dark_blue"
+                    android:textColorHint="@color/blue"
+                    android:textCursorDrawable="@drawable/text_cursor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="Địa chỉ"
+                android:textColor="@color/blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+                app:hintTextColor="@android:color/transparent"
+                app:startIconDrawable="@drawable/address_ic"
+                app:startIconTint="@color/blue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_address_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/bg_text_box"
+                    android:hint="Nhập địa chỉ"
+                    android:textSize="15sp"
+                    android:textColor="@color/dark_blue"
+                    android:textColorHint="@color/blue"
+                    android:textCursorDrawable="@drawable/text_cursor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="Tên công việc"
+                android:textColor="@color/blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+                app:hintTextColor="@android:color/transparent"
+                app:startIconDrawable="@drawable/file_ic"
+                app:startIconTint="@color/blue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_job_name_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/bg_text_box"
+                    android:hint="Skype"
+                    android:textSize="15sp"
+                    android:textColor="@color/dark_blue"
+                    android:textColorHint="@color/blue"
+                    android:textCursorDrawable="@drawable/text_cursor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="Ngành nghề mong muốn"
+                android:textColor="@color/blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+                app:hintTextColor="@android:color/transparent"
+                app:startIconDrawable="@drawable/job_ic"
+                app:startIconTint="@color/blue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_job_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/bg_text_box"
+                    android:drawableEnd="@drawable/arrow_down_gray"
+                    android:drawableRight="@drawable/arrow_down_gray"
+                    android:focusable="false"
+                    android:hint="Chọn ngành nghề"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:paddingEnd="15dp"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/dark_blue"
+                    android:textColorHint="@color/blue"
+                    android:textCursorDrawable="@drawable/text_cursor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:textCursorDrawable="@drawable/text_cursor"
+                android:gravity="top|left"
+                android:background="@drawable/bg_text_box"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/blue"
+                android:hint="Mô tả công ty"
+                android:textColorHint="@color/blue"
+                android:id="@+id/describe_company"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry" />
+
+            <LinearLayout
+                android:paddingVertical="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkbox_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/custom_checkbox"
+                    android:buttonTint="@color/blue"
+                    android:text=" Tôi đồng ý với "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quy Định và Điều Khoản"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_next_register"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_button_blue"
+                android:gravity="center"
+                android:text="Đăng ký"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="85dp"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bạn đã có tài khoản? "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txt_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đăng nhập"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/select_spinner_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <View
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/header_card" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

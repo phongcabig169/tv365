@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/nav_notification"
+        android:title="@string/notification_management"/>
+    <item
+        android:id="@+id/nav_support"
+        android:title="@string/support_online"/>
+    <item
+        android:id="@+id/nav_terms"
+        android:title="@string/terms_of_use"/>
+
+
+</menu>

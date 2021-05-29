@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="#FFFEFE"
+    android:layout_marginStart="18dp"
+    android:layout_marginEnd="18dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgCandidateBanner"
+            android:src="@drawable/candidate_banner_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvCandidateJob"
+            android:text="@string/candidate_job"
+            android:layout_below="@id/imgCandidateBanner"
+            android:layout_alignStart="@id/imgCandidateBanner"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/imgCandidateBanner" />
+
+        <TextView
+            android:id="@+id/tvCandidateCompany"
+            android:text="@string/candidate_company"
+            android:textSize="12sp"
+            android:textColor="@color/black_200"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/tvCandidateJob"
+            android:layout_alignStart="@id/tvCandidateJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tvCandidateJob" />
+
+        <TextView
+            android:id="@+id/tvCandidateLocation"
+            android:text="@string/candidate_location"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_text_yellow"
+            android:layout_above="@id/tvCandidateCompany"
+            android:layout_alignEnd="@id/imgCandidateBanner"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/imgCandidateBanner"
+            android:layout_marginRight="10dp" />
+        
+        <TextView
+            android:id="@+id/tvSeeDetails"
+            android:text="@string/see_details"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_300"
+            android:background="@drawable/bg_text_white"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/imgCandidateBanner"
+            android:layout_marginBottom="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="SmallSp" />
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:layout_above="@id/tvSeeDetails"
+            android:layout_alignEnd="@id/imgCandidateBanner"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/bg_text_white"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_alignRight="@id/imgCandidateBanner">
+
+            <ImageView
+                android:src="@drawable/icon_star"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:text="@string/star"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="7sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

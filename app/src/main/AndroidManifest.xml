@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.tv365">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tv365net">
+        <activity android:name=".view.SelectCateActivity"></activity>
+        <activity android:name=".view.SelectDistrictActivity" />
+        <activity android:name=".view.SelectCityActivity" />
+        <activity android:name=".Recruiters.activity.See_Candidates_NearYou" />
+        <activity android:name=".Recruiters.activity.WebCreateCVActivity" />
+        <activity android:name=".Recruiters.activity.Updated_Company_Info" />
+        <activity android:name=".Recruiters.activity.Update_Reference_Person_Recruiters" />
+        <activity android:name=".Recruiters.activity.Recruiters_Search_Activity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".view.CandidateSearchActivity"/>
+        <activity android:name=".view.NotificationManagementActivity"/>
+
+        <activity android:name=".view.UpdateReferencePersonActivity" />
+        <activity android:name=".view.UpdateLanguageSkillActivity" />
+        <activity android:name=".view.UpdateExpActivity" />
+        <activity android:name=".view.UpdateAcademicActivity" />
+        <activity android:name=".view.UpdateWorkSkillActivity" />
+        <activity android:name=".view.UpdateWorkTargetActivity" />
+        <activity android:name=".view.UpdateDesireJobProfileActivity" />
+        <activity android:name=".view.UpdateInformationProfileActivity" />
+        <activity android:name=".view.UploadCVActivity" />
+        <activity android:name=".view.CompleteProfileActivity" />
+        <activity android:name=".view.EmployerRegisterActivity" />
+        <activity android:name=".view.ContainerActivity" />
+        <activity android:name=".view.RecruitmentNewsActivity" />
+        <activity android:name=".view.TopEmployerActivity" />
+        <activity android:name=".Recruiters.activity.Create_RecruimentNews" />
+        <activity android:name=".Recruiters.activity.RecruitersProfile" />
+        <activity android:name=".Recruiters.activity.ChangePass_Recruiters" />
+        <activity android:name=".Recruiters.activity.CandidateDetails" />
+        <activity android:name=".view.JobDetailActivity" />
+        <activity android:name=".view.CandidateRegisterActivity" />
+        <activity android:name=".view.HomeLoginActivity" />
+        <activity android:name=".view.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.IntroActivity" />
+        <activity android:name=".view.MainActivity" />
+        <activity android:name=".Recruiters.activity.Manage_RecruimentNews" />
+        <activity android:name=".Recruiters.activity.ScreenManagement_Activity" />
+    </application>
+
+</manifest>

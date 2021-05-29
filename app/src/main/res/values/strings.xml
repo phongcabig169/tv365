@@ -1,0 +1,308 @@
+<resources>
+    <string name="app_name">tv365net</string>
+
+    <string name="candidate_job">Nhân viên Kinh doanh</string>
+    <string name="candidate_company">Công ty CP Thanh toán Hưng Hà</string>
+    <string name="candidate_location">Hà Nội</string>
+    <string name="see_details">Xem chi tiết</string>
+    <string name="star">4.5</string>
+    <string name="title_candidate">Tìm thấy công việc phù hợp trong vài phút</string>
+    <string name="search">Tìm kiếm...</string>
+    <string name="title_banner_candidate">VIỆC LÀM HÀNG ĐẦU</string>
+    <string name="top_employer">NHÀ TUYỂN DỤNG HÀNG ĐẦU</string>
+    <string name="employer">Nhà tuyển dụng</string>
+    <string name="suitable_job">VIỆC LÀM PHÙ HỢP</string>
+    <string name="company">Doanh nghiệp vip</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="close">Đóng</string>
+    <string name="version">Phiên bản: 1.0.0</string>
+    <string name="mail">thuphuong@gmail.com</string>
+    <string name="home">Trang chủ</string>
+    <string name="login">Đăng nhập</string>
+    <string name="login_without_acc">Truy cập không cần tài khoản</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="candidate">Ứng viên</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="confirm_pass">Nhập lại mật khẩu</string>
+    <string name="more_than_six">Tối thiểu 6 ký tự</string>
+    <string name="next">Tiếp theo</string>
+    <string name="ok">OK</string>
+    <string name="action_settings">Settings</string>
+    <string name="city_title">Nhập tìm kiếm hoặc chọn 1 trong các tỉnh thành dưới đây</string>
+    <string name="workplace_title">Chọn tối đa 3 nơi làm việc</string>
+    <string name="input_career">Nhập ngành nghề...</string>
+    <string name="cancel">Hủy</string>
+    <string name="input_province">Nhập tỉnh thành...</string>
+    <string name="sigup_for_notify">Đăng kí nhận thông báo việc làm mới</string>
+    <string name="search_recently">TÌM KIẾM GẦN ĐÂY</string>
+    <string name="job_detail">Chi tiết việc làm</string>
+    <string name="top_employer_detail">Chi tiết nhà tuyển dụng hàng đầu</string>
+    <string name="deadline">Hạn nộp hồ sơ: 05/02/2020</string>
+    <string name="view">Lượt xem: 200</string>
+    <string name="title_job_detail">Tuyển NV Kinh Doanh tại Hà Nội</string>
+    <string name="company_name">Công ty CP Thanh toán Hưng Hà</string>
+    <string name="wage">Mức lương:</string>
+    <string name="true_wage">5 - 7 triệu</string>
+    <string name="location_jd">Nơi làm việc</string>
+    <string name="hanoi">Hà Nội</string>
+    <string name="address">Địa chỉ</string>
+    <string name="true_address">B50 lô 6 KDT Định Công - Hà Nội</string>
+    <string name="position">Chức vụ:</string>
+    <string name="true_position">Nhân viên kinh doanh</string>
+    <string name="experience">Kinh Nghiệm:</string>
+    <string name="true_experience">0 - 1 năm kinh nghiệm</string>
+    <string name="work_form">Hình thức làm việc:</string>
+    <string name="work_form_true">Toàn thời gian</string>
+    <string name="degree">Yêu cầu bằng cấp:</string>
+    <string name="true_degree">Chứng chỉ trở lên</string>
+    <string name="gender">Giới tính:</string>
+    <string name="true_gender">Nam/ Nữ</string>
+    <string name="email_">Email:</string>
+    <string name="not_yet_update">Chưa cập nhật</string>
+    <string name="hotline">Hotline:</string>
+    <string name="address_">Địa chỉ:</string>
+    <string name="true_address_">B50 lô 6 KDT Định Công - Hà Nội</string>
+    <string name="scale">Quy mô:</string>
+    <string name="job_description">Mô tả công việc</string>
+    <string name="true_job_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore quis dolor in hendrerit in vulputate velit esse molestie consequat</string>
+    <string name="job_requirements">Yêu cầu công việc</string>
+    <string name="benefits_enjoyed">Quyền lợi được hưởng</string>
+    <string name="records_include">Hồ sơ bao gồm</string>
+    <string name="same_job">Việc làm tương tự</string>
+    <string name="save">Lưu</string>
+    <string name="apply">Ứng Tuyển</string>
+    <string name="apply_success">NỘP HỒ SƠ THÀNH CÔNG</string>
+    <string name="notify_success_1">Chúc mừng bạn vừa nộp hồ sơ</string>
+    <string name="notify_success_2">thành công cho vị trí Nhân Viên Kinh Doanh</string>
+    <string name="company_name_upper">CÔNG TY CỔ PHẦN THANH TOÁN HƯNG HÀ</string>
+    <string name="_view">43 lượt xem</string>
+    <string name="information_company">Thông tin công ty</string>
+    <string name="company_introduction">Giới thiệu công ty</string>
+    <string name="company_introduction_content">Công ty CP Thanh Toán Hưng Hà là nhà cung cấp dịch vụ nhân sự, giải pháp quản lý và tuyển dụng</string>
+    <string name="company_address">Địa chỉ công ty</string>
+    <string name="company_address_true">50B khu Đô thị Định Công, Hoàng Mai, Hà Nội</string>
+    <string name="company_scale">Quy mô công ty</string>
+    <string name="company_scale_true">50 - 100 nhân viên</string>
+    <string name="landline_phone">Điện thoại cố định</string>
+    <string name="landline_phone_true">01234567894</string>
+    <string name="province_city">Tỉnh / Thành phố</string>
+    <string name="job_same_company">Việc làm cùng công ty</string>
+    <string name="job_recruitment_news">VIỆC LÀM - TIN TUYỂN DỤNG</string>
+    <string name="find_job">Tìm thấy công việc phù hợp trong vài phút</string>
+    <string name="view_job">Xem Việc</string>
+    <string name="number_job">50 việc</string>
+
+    <string name="token">eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VfaWQiOiI3MDk0OCIsInVzZV9lbWFpbCI6ImJwYjc1NjMzQGVvb3B5LmNvbSIsInVzZV9jcmVhdGVfdGltZSI6IjE2MTcyNzEyNzEiLCJ1c2VfZXhwaXJlZCI6MTYyMjc5NzA2M30.VQbord41GTJcPt8nurPlz-1A98gUl4OraFSP4WHpUAU</string>
+
+    <string name="title_activity_home_recruiters">HomeRecruiters</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string-array name="strLevel_CreateRecruiters">
+        <item>Không yêu cầu</item>
+        <item>Mới tốt nghiệp</item>
+        <item>Nhân viên</item>
+        <item>Thực tập sinh</item>
+        <item>Trưởng phòng</item>
+        <item>Giám đốc</item>
+        <item>Phó giám đốc</item>
+        <item>Quản lý cấp trung</item>
+        <item>Quản lý cao cấp</item>
+        <item>Tổng giám đốc điều hành</item>
+    </string-array>
+    <string-array name="strCareer_CreateRecruiters">
+        <item>Ngành nghề</item>
+        <item>kế toán - Kiểm toán</item>
+        <item>Hành chính - văn phòng</item>
+        <item>Sinh viên làm thêm</item>
+        <item>Xây dựng</item>
+        <item>Điện - Điện tử</item>
+        <item>Làm bán thời gian</item>
+        <item>Vận tải - Lái xe</item>
+        <item>Khách sạn - Nhà hàng</item>
+        <item>Nhân viên kinh doanh</item>
+        <item>Việc làm bán hàng</item>
+        <item>Cơ khí - Chế tạo</item>
+        <item>Lao động phổ thông</item>
+        <item>IT phần mềm</item>
+        <item>Marketing - PR</item>
+        <item>Giáo Dục - Đào tạo</item>
+        <item>Kỹ thuật</item>
+        <item>Y tế - Dược</item>
+        <item>Quản trị kinh doanh</item>
+        <item>Dịch vụ</item>
+        <item>Biên - Phiên dịch</item>
+        <item>Dệt may - Da giày</item>
+        <item>Kiến trúc - Thiết kế nội thất</item>
+        <item>Xuất, Nhập khẩu</item>
+        <item>IT Phần cứng - Mạng</item>
+        <item>Nhân sự</item>
+        <item>Thiết kế - Mỹ thuật</item>
+        <item>Tư vấn</item>
+        <item>Bảo vệ</item>
+        <item>Ô tô - Xe máy</item>
+        <item>Thư ký - Trợ lý</item>
+        <item>Kinh doanh Bất động sản</item>
+        <item>Du lịch</item>
+        <item>Báo chí - Truyền Hình</item>
+        <item>Thực phẩm - Đồ uống</item>
+        <item>Ngành nghề khác</item>
+        <item>Vật tư - Thiết bị</item>
+        <item>Thiết kế Web</item>
+        <item>In ấn - Xuất bản</item>
+        <item>Nông, Lâm, Ngư nghiệp</item>
+        <item>Thương mại điện tử</item>
+        <item>Nhập liệu</item>
+        <item>Việc làm thêm tại nhà</item>
+        <item>Chăm sóc kkách hàng</item>
+        <item>Sinh viên mới tốt nghệp - Thực tập</item>
+        <item>Kỹ thuật ứng dụng</item>
+        <item>Bưu chính viễn thông</item>
+        <item>Dầu khí - Địa chất</item>
+        <item>Giao thông vận tải - Thủy lợi - Cầu đường</item>
+        <item>Khu chế xuất - Khu công nghiệp</item>
+        <item>Làm đẹp - Thể lực - Spa</item>
+        <item>Luật - Pháp lý</item>
+        <item>Môi trường - Xử lý chất thải</item>
+        <item>Mỹ phẩm - Thời trang - Trang sức</item>
+        <item>Ngân hàng - Chứng khoán - Đầu tư</item>
+        <item>Nghệ thuật - Điện ảnh</item>
+        <item>Phát triển thị trường</item>
+        <item>Phục vụ - Tạp vụ - Giúp Việc</item>
+        <item>Quan hệ đối ngoại</item>
+        <item>Quản lý điều hành</item>
+        <item>Sản xuất - Vận hành sản xuất</item>
+        <item>Thẩm định - Quản lý chất lượng</item>
+        <item>Thể dục - Thể thao</item>
+        <item>Hóa học - Sinh học</item>
+        <item>Bảo hiểm</item>
+        <item>Công chức - Viên chức</item>
+    </string-array>
+    <string-array name="strFormWork_CreateRecruiters">
+        <item>Toàn thời gian cố định</item>
+        <item>Toàn thời gian tạm thời</item>
+        <item>Bán thời gian</item>
+        <item>Bán thời gian tạm thời</item>
+        <item>Hợp đồng</item>
+        <item>Khác</item>
+    </string-array>
+    <string-array name="strSalary_CreateRecruiters">
+        <item>Chọn mức lương</item>
+        <item>Thỏa thuận</item>
+        <item>1-3 triệu</item>
+        <item>3-5 triệu</item>
+        <item>5-7 triệu</item>
+        <item>7-10 triệu</item>
+        <item>10-15 triệu</item>
+        <item>15-20 triệu</item>
+        <item>20-30 triệu</item>
+        <item>Trên 30 triệu</item>
+    </string-array>
+    <string-array name="strExp_CreateRecruiters">
+        <item>Không yêu cầu kinh nghiệm</item>
+        <item>Chưa có kinh nghiệm</item>
+        <item>0-1 năm kinh nghiệm</item>
+        <item>1-2 năm kinh nghiệm</item>
+        <item>2-5 năm kinh nghiệm</item>
+        <item>5-10 năm kinh nghiệm</item>
+        <item>Hơn 10 năm kinh nghiệm</item>
+    </string-array>
+    <string-array name="strEdu_CreateRecruiters">
+        <item>Đại học</item>
+        <item>Cao đẳng</item>
+        <item>Trung cấp</item>
+        <item>Phổ thông cơ sở</item>
+        <item>Trung học</item>
+        <item>Chứng chỉ</item>
+        <item>Cử nhân</item>
+        <item>Thạc sĩ</item>
+        <item>Khác</item>
+    </string-array>
+    <string-array name="strGender_CreateRecruiters">
+        <item>Nam</item>
+        <item>Nữ</item>
+        <item>Khác</item>
+    </string-array>
+    <string-array name="strAddress_CreateRecruiters">
+        <item>Thành phố Hà Nội</item>
+        <item>Thành phố Hồ Chí Minh</item>
+        <item>Tỉnh Hà Giang</item>
+        <item>Tỉnh Cao Bằng</item>
+        <item>Tỉnh Bắc Kạn</item>
+        <item>Tỉnh Tuyên Quang</item>
+        <item>Tỉnh Lào Cai</item>
+        <item>Tỉnh Điện Biên</item>
+        <item>Tỉnh Lai Châu</item>
+        <item>Tỉnh Sơn La</item>
+        <item>Tỉnh Yên Bái</item>
+        <item>Tỉnh Hoà Bình</item>
+        <item>Tỉnh Thái Nguyên</item>
+        <item>Tỉnh Lạng Sơn</item>
+        <item>Tỉnh Quảng Ninh</item>
+        <item>Tỉnh Bắc Giang</item>
+        <item>Tỉnh Phú Thọ</item>
+        <item>Tỉnh Vĩnh Phúc</item>
+        <item>Tỉnh Bắc Ninh</item>
+        <item>Tỉnh Hải Dương</item>
+        <item>Thành phố Hải Phòng</item>
+        <item>Tỉnh Hưng Yên</item>
+        <item>Tỉnh Thái Bình</item>
+        <item>Tỉnh Hà Nam</item>
+        <item>Tỉnh Nam Định</item>
+        <item>Tỉnh Ninh Bình</item>
+        <item>Tỉnh Thanh Hóa</item>
+        <item>Tỉnh Nghệ An</item>
+        <item>Tỉnh Hà Tĩnh</item>
+        <item>Tỉnh Quảng Bình</item>
+        <item>Tỉnh Quảng Trị</item>
+        <item>Tỉnh Thừa Thiên Huế</item>
+        <item>Thành phố Đà Nẵng</item>
+        <item>Tỉnh Quảng Nam</item>
+        <item>Tỉnh Quảng Ngãi</item>
+        <item>Tỉnh Bình Định</item>
+        <item>Tỉnh Phú Yên</item>
+        <item>Tỉnh Khánh Hòa</item>
+        <item>Tỉnh Ninh Thuận</item>
+        <item>Tỉnh Bình Thuận</item>
+        <item>Tỉnh Kon Tum</item>
+        <item>Tỉnh Gia Lai</item>
+        <item>Tỉnh Đắk Lắk</item>
+        <item>Tỉnh Đắk Nông</item>
+        <item>Tỉnh Lâm Đồng</item>
+        <item>Tỉnh Bình Phước</item>
+        <item>Tỉnh Tây Ninh</item>
+        <item>Tỉnh Bình Dương</item>
+        <item>Tỉnh Đồng Nai</item>
+        <item>Tỉnh Bà Rịa - Vũng Tàu</item>
+        <item>Tỉnh Long An</item>
+        <item>Tỉnh Tiền Giang</item>
+        <item>Tỉnh Bến Tre</item>
+        <item>Tỉnh Trà Vinh</item>
+        <item>Tỉnh Vĩnh Long</item>
+        <item>Tỉnh Đồng Tháp</item>
+        <item>Tỉnh An Giang</item>
+        <item>Tỉnh Kiên Giang</item>
+        <item>Thành phố Cần Thơ</item>
+        <item>Tỉnh Hậu Giang</item>
+        <item>Tỉnh Sóc Trăng</item>
+        <item>Tỉnh Bạc Liêu</item>
+        <item>Tỉnh Cà Mau</item>
+
+    </string-array>
+    <string name="notification_management">Quản lý thông báo</string>
+    <string name="support_online">Hỗ trợ trực tuyến</string>
+    <string name="terms_of_use">Thỏa thuận sử dụng</string>
+    <string name="title_typical_news">Dấu Giáp Lai là gì?</string>
+    <string name="content_typical_news">Trên giấy tờ, tài liệu quan trọng bạn thường thấy có dấu giáp lai đỏ</string>
+    <string name="name_tn">Trương Diệp Chi</string>
+    <string name="typical_news_date">- 05/01/2020</string>
+    <string name="typical_new">TIN TỨC TIÊU BIỂU</string>
+    <string name="view_all">Xem tất cả</string>
+    <string name="latest_news">TIN TỨC MỚI NHẤT</string>
+    <string name="district_title">Chọn 1 trong các quận huyện dưới đây</string>
+    <string name="cate_title">Chọn 1 trong các ngành nghề dưới đây</string>
+
+</resources>

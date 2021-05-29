@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/light_gray"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgBack_ReferencePerson_Recruiters"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:paddingHorizontal="20dp"
+            android:src="@drawable/long_arrow_left_ic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:gravity="center_horizontal"
+            android:paddingBottom="30dp"
+            android:text="Cập nhật người tham chiếu"
+            android:textAllCaps="true"
+            android:textColor="@color/blue"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="25dp"
+            android:text="Họ và tên người tham chiếu"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtName_ReferencePerson_Recruiters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:height="40dp"
+            android:background="@drawable/bg_color_white"
+            android:elevation="5dp"
+            android:hint="Họ tên người tham chiếu"
+            android:paddingHorizontal="15dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_250"
+            android:textCursorDrawable="@drawable/text_cursor"
+            android:textSize="15sp"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="25dp"
+            android:text="Số điện thoại người tham chiếu"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtPhone_ReferencePerson_Recruiters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:height="40dp"
+            android:background="@drawable/bg_card_edit_profile"
+            android:elevation="5dp"
+            android:hint="Nhập số điện thoại"
+            android:inputType="phone"
+            android:paddingHorizontal="15dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_250"
+            android:textCursorDrawable="@drawable/text_cursor"
+            android:textSize="15sp"
+            tools:ignore="UnusedAttribute" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:paddingHorizontal="25dp"
+            android:text="Địa chỉ"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtAddress_ReferencePerson_Recruiters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:height="40dp"
+            android:background="@drawable/bg_card_edit_profile"
+            android:elevation="5dp"
+            android:hint="Nhập địa chỉ"
+            android:paddingHorizontal="15dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_250"
+            android:textCursorDrawable="@drawable/text_cursor"
+            android:textSize="15sp"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:paddingHorizontal="25dp"
+            android:text="Email"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etdEmail_ReferencePerson_Recruiters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:height="40dp"
+            android:background="@drawable/bg_color_white"
+            android:elevation="5dp"
+            android:hint="Nhập Email"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="15dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_250"
+            android:textCursorDrawable="@drawable/text_cursor"
+            android:textSize="15sp"
+            tools:ignore="UnusedAttribute" />
+
+        <Button
+            android:id="@+id/btnUpdate_ReferencePerson_Recruiters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="330dp"
+            android:background="@drawable/bg_color_blue"
+            android:lineHeight="18dp"
+            android:paddingLeft="62dp"
+            android:paddingRight="62dp"
+            android:text="Cập Nhật"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</ScrollView>

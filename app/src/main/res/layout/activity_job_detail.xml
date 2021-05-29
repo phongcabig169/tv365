@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".view.JobDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgBackground"
+            android:src="@drawable/background_job_detail"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarJobDetail"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/job_detail"
+            app:titleTextColor="@color/purple_300"/>
+
+        <RelativeLayout
+            android:id="@+id/rlJobDetail"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintTop_toBottomOf="@id/imgBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgCalendarJobDetail"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvDeadLine"
+                android:text="@string/deadline"
+                android:textSize="13sp"
+                android:textColor="@color/gray_100"
+                android:layout_toEndOf="@id/imgCalendarJobDetail"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imgCalendarJobDetail"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/tvView"
+                android:text="@string/view"
+                android:textSize="13sp"
+                android:textColor="@color/gray_100"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+            <ImageView
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/tvView"
+                android:src="@drawable/icon_eye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tvView"
+                android:layout_marginEnd="8dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llJD1"
+            android:layout_marginTop="22dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintTop_toBottomOf="@id/rlJobDetail"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/title_job_detail"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_300"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="@string/company_name"
+                android:textSize="14sp"
+                android:textColor="@color/gray_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvWage"
+                    android:text="@string/wage"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@+id/tvWage"
+                    android:text="@string/true_wage"
+                    android:textSize="14sp"
+                    android:textColor="@color/purple_300"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvWage"
+                    android:layout_marginStart="8dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvLocationJD"
+                    android:text="@string/location_jd"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvTrueLocationJD"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@+id/tvLocationJD"
+                    android:text="@string/hanoi"
+                    android:textSize="14sp"
+                    android:textColor="@color/yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvLocationJD"
+                    android:layout_marginStart="8dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvAddressJD"
+                    android:text="@string/address"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvTrueAddressJD"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@+id/tvAddressJD"
+                    android:text="@string/true_address"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvAddressJD"
+                    android:layout_marginStart="8dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llJD2"
+            android:background="@color/gray_250"
+            android:layout_marginTop="22dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            app:layout_constraintTop_toBottomOf="@id/llJD1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgPosition"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvPosition"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toEndOf="@id/imgPosition"
+                    android:text="@string/position"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imgPosition"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:id="@+id/tvTruePosition"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@+id/tvPosition"
+                    android:text="@string/true_position"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvPosition"
+                    android:layout_marginStart="8dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgExperience"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_experience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvExperience"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toEndOf="@id/imgExperience"
+                    android:text="@string/experience"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imgExperience"
+                    android:layout_marginStart="14dp" />
+
+                <TextView
+                    android:id="@+id/tvTrueExperience"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@+id/tvExperience"
+                    android:text="@string/true_experience"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvExperience"
+                    android:layout_marginStart="8dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgWorkForm"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_work_form"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvWorkForm"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toEndOf="@id/imgWorkForm"
+                    android:text="@string/work_form"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imgWorkForm"
+                    android:layout_marginStart="13dp" />
+
+                <TextView
+                    android:id="@+id/tvTrueWorkForm"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@+id/tvWorkForm"
+                    android:text="@string/work_form_true"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvWorkForm"
+                    android:layout_marginStart="8dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgDegree"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_degree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDegree"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/imgDegree"
+                    android:text="@string/degree"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imgDegree"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:id="@+id/tvTrueDegree"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@+id/tvDegree"
+                    android:text="@string/true_degree"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvDegree"
+                    android:layout_marginStart="8dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgGender"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvGender"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/imgGender"
+                    android:text="@string/gender"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imgGender"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:id="@+id/tvTrueGender"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@+id/tvGender"
+                    android:text="@string/true_gender"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvGender"
+                    android:layout_marginStart="8dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/llJD2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/job_description"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:text="@string/true_job_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="22dp"
+                android:text="@string/job_requirements"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:text="@string/true_job_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="22dp"
+                android:text="@string/benefits_enjoyed"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:text="@string/true_job_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="22dp"
+                android:text="@string/records_include"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:text="@string/true_job_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="22dp"
+                android:text="@string/information_company"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <include
+                android:id="@+id/include_card_information_company"
+                android:layout_marginTop="21dp"
+                layout="@layout/card_information_company"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_marginTop="22dp"
+                android:text="@string/same_job"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <include
+                android:id="@+id/include_card_candidate_job"
+                android:layout_marginTop="21dp"
+                layout="@layout/card_candidate_job"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="26dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvSaveJobDetail"
+                    android:background="@drawable/bg_btn_round_non_click"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/save"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@color/purple_300"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvApplyJobDetail"
+                    android:background="@drawable/bg_btn_round_on_click"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/apply"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

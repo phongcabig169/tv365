@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llSuitableJob"
+        android:padding="16dp"
+        android:background="@drawable/bg_top_employer"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/icon_employer"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/employer"
+            android:textSize="10sp"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center"
+            android:textColor="@color/purple_300"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="SmallSp" />
+
+        <ImageView
+            android:id="@+id/imgSuitableJobLogo"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_employer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvJobNameSuitableJob"
+        android:text="@string/candidate_job"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:lines="1"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/llSuitableJob"
+        android:layout_alignStart="@id/llSuitableJob"
+        android:layout_alignEnd="@id/llSuitableJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/llSuitableJob"
+        android:layout_alignRight="@id/llSuitableJob" />
+
+    <TextView
+        android:id="@+id/tvCompanySuitableJob"
+        android:layout_marginTop="4dp"
+        android:text="@string/company"
+        android:textColor="@color/gray_100"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:lines="1"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_below="@id/tvJobNameSuitableJob"
+        android:layout_alignStart="@id/llSuitableJob"
+        android:layout_alignEnd="@id/llSuitableJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/llSuitableJob"
+        android:layout_alignRight="@id/llSuitableJob" />
+
+</RelativeLayout>

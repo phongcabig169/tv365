@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/it1"
+        android:title="Thỏa thuận"/>
+    <item android:id="@+id/it2"
+        android:title="1 - 3 triệu"/>
+    <item android:id="@+id/it3"
+        android:title="3 - 5 triệu"/>
+    <item android:id="@+id/it4"
+        android:title="5 - 7 triệu"/>
+    <item android:id="@+id/it6"
+        android:title="7 - 10 triệu"/>
+    <item android:id="@+id/it7"
+        android:title="10 - 15 triệu"/>
+    <item android:id="@+id/it8"
+        android:title="15 - 20 triệu"/>
+    <item android:id="@+id/it9"
+        android:title="20 - 30 triệu"/>
+    <item android:id="@+id/it10"
+        android:title="Trên 30 triệu"/>
+</menu>

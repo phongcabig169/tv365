@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ctLayout_ItemCandidateViewMultiple"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+
+    <ImageView
+        android:id="@+id/imgBgAvatar_ItemCandidateViewMultiple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/round_frame_color_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:src="@drawable/avatar_candidate"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBgAvatar_ItemCandidateViewMultiple"
+        app:layout_constraintEnd_toEndOf="@+id/imgBgAvatar_ItemCandidateViewMultiple"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imgBgAvatar_ItemCandidateViewMultiple"
+        app:layout_constraintTop_toTopOf="@+id/imgBgAvatar_ItemCandidateViewMultiple" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

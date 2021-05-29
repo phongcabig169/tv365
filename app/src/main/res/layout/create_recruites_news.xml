@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Light_Pink"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgBack_CreateRecruitersNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/icon_back_color_gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:lineHeight="21dp"
+            android:text="TẠO TIN TUYỂN DỤNG"
+            android:textColor="@color/Blue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="19dp"
+            android:lineHeight="21dp"
+            android:text="Thông tin tuyển dụng"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="19dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="Tiêu đề"
+                android:textColor="@color/Blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:elevation="5dp"
+                android:id="@+id/edtTitle_CreateRecruitersNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_color_white"
+                android:hint="Nhập tiêu đề"
+                android:inputType="text"
+                android:lineHeight="18dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="12dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="19dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="Cấp bậc"
+                android:textColor="@color/Blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <Spinner
+                    android:elevation="5dp"
+                    android:layout_margin="4dp"
+                    android:id="@+id/spLevel_CreateRecruitersNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_color_white"
+                    android:hint="Nhập tiêu đề"
+                    android:lineHeight="18dp"
+                    android:padding="12dp"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:elevation="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="16dp"
+                    android:src="@drawable/ic_arrow_color_black" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="19dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="Ngành nghề"
+                android:textColor="@color/Blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_margin="4dp"
+                    android:elevation="5dp"
+                    android:id="@+id/spCareer_CreateRecruitersNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/bg_color_white"
+                    android:hint="Nhập tiêu đề"
+                    android:lineHeight="18dp"
+                    android:padding="12dp"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:elevation="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="12dp"
+                    android:src="@drawable/ic_arrow_color_black" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="19dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="Hình thức làm việc"
+                android:textColor="@color/Blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <Spinner
+                    android:layout_margin="4dp"
+                    android:elevation="5dp"
+                    android:id="@+id/spFormWork_CreateRecruitersNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/bg_color_white"
+                    android:hint="Nhập tiêu đề"
+                    android:lineHeight="18dp"
+                    android:padding="12dp"
+                    android:textSize="15sp" />
+
+
+                <ImageView
+                    android:elevation="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="12dp"
+                    android:src="@drawable/ic_arrow_color_black" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="19dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="Mức lương"
+                android:textColor="@color/Blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <Spinner
+                    android:layout_margin="4dp"
+                    android:elevation="5dp"
+                    android:id="@+id/spSalary_CreateRecruitersNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/bg_color_white"
+                    android:hint="Nhập tiêu đề"
+                    android:lineHeight="18dp"
+                    android:padding="12dp"
+                    android:textSize="15sp" />
+
+
+                <ImageView
+                    android:elevation="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="12dp"
+                    android:src="@drawable/ic_arrow_color_black" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="19dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="Kinh nghiệm"
+                android:textColor="@color/Blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <Spinner
+                    android:layout_margin="4dp"
+                    android:elevation="5dp"
+                    android:id="@+id/spExp_CreateRecruitersNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/bg_color_white"
+                    android:hint="Nhập tiêu đề"
+                    android:lineHeight="18dp"
+                    android:padding="12dp"
+                    android:textSize="15sp" />
+
+
+                <ImageView
+                    android:elevation="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="12dp"
+                    android:src="@drawable/ic_arrow_color_black" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="19dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="Yêu cầu bằng cấp"
+                android:textColor="@color/Blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <Spinner
+                    android:layout_margin="4dp"
+                    android:elevation="5dp"
+                    android:id="@+id/spEdu_CreateRecruitersNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/bg_color_white"
+                    android:hint="Nhập tiêu đề"
+                    android:lineHeight="18dp"
+                    android:padding="12dp"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:elevation="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="12dp"
+                    android:src="@drawable/ic_arrow_color_black" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="19dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="Địa điểm làm việc"
+                android:textColor="@color/Blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_margin="4dp"
+                    android:elevation="5dp"
+                    android:id="@+id/spAddress_CreateRecruitersNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/bg_color_white"
+                    android:hint="Nhập tiêu đề"
+                    android:lineHeight="18dp"
+                    android:padding="12dp"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:elevation="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="12dp"
+                    android:src="@drawable/ic_arrow_color_black" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="19dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="Số lượng ứng viên"
+                android:textColor="@color/Blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:elevation="5dp"
+                android:id="@+id/edtNumCandi_CreateRecruitersNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_color_white"
+                android:hint="Nhập số lượng ứng viên"
+                android:inputType="number"
+                android:lineHeight="18dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="12dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="19dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="Giới tính"
+                android:textColor="@color/Blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <Spinner
+                    android:layout_margin="4dp"
+                    android:elevation="5dp"
+                    android:id="@+id/spGender_CreateRecruitersNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/bg_color_white"
+                    android:hint="Nhập tiêu đề"
+                    android:lineHeight="18dp"
+                    android:padding="12dp"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:elevation="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="12dp"
+                    android:src="@drawable/ic_arrow_color_black" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="19dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="Mô tả công việc"
+                android:textColor="@color/Blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:elevation="5dp"
+                android:id="@+id/edtJobDes_CreateRecruitersNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_color_white"
+                android:hint="Mô tả công việc"
+                android:inputType="text"
+                android:lineHeight="18dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="12dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="19dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="Yêu cầu công việc"
+                android:textColor="@color/Blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:elevation="5dp"
+                android:id="@+id/edtJobReq_CreateRecruitersNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_color_white"
+                android:hint="Yêu cầu công việc"
+                android:inputType="text"
+                android:lineHeight="18dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="12dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="19dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="Quyền lợi được hưởng"
+                android:textColor="@color/Blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:elevation="5dp"
+                android:id="@+id/edtBenefit_CreateRecruitersNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_color_white"
+                android:hint="Nhập quyền lợi"
+                android:inputType="text"
+                android:lineHeight="18dp"
+                android:paddingLeft="18dp"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="40dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="19dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="Hồ sơ bao gồm"
+                android:textColor="@color/Blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:elevation="5dp"
+                android:id="@+id/edtRecords_CreateRecruitersNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_color_white"
+                android:hint="Nhập thông tin hồ sơ cần nộp"
+                android:inputType="text"
+                android:lineHeight="18dp"
+                android:paddingLeft="18dp"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="40dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="19dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="Hạn nộp hồ sơ"
+                android:textColor="@color/Blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:inputType="date"
+                android:layout_margin="4dp"
+                android:elevation="5dp"
+                android:id="@+id/edtDeadline_CreateRecruitersNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_color_white"
+                android:drawableRight="@drawable/icon_calendar_color_gray"
+                android:hint="Nhập hạn nộp hồ sơ"
+                android:lineHeight="18dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="12dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="33dp"
+            android:lineHeight="21dp"
+            android:text="Thông tin liên hệ"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="19dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="Họ tên người liên hệ"
+                android:textColor="@color/Blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:elevation="5dp"
+                android:id="@+id/edtContactName_CreateRecruitersNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_color_white"
+                android:hint="Nhập họ tên người liên hệ"
+                android:lineHeight="18dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="12dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="19dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="Số điện thoại người liên hệ"
+                android:textColor="@color/Blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:elevation="5dp"
+                android:id="@+id/edtContactPhone_CreateRecruitersNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_color_white"
+                android:hint="Nhập số điện thoại người liên hệ"
+                android:inputType="phone"
+                android:lineHeight="18dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="12dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="19dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="Email người liên hệ"
+                android:textColor="@color/Blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:elevation="5dp"
+                android:id="@+id/edtContactEmail_CreateRecruitersNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_color_white"
+                android:hint="Nhập email thoại người liên hệ"
+                android:inputType="textEmailAddress"
+                android:lineHeight="18dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="12dp"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="19dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="Địa chỉ liên hệ"
+                android:textColor="@color/Blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:elevation="5dp"
+                android:id="@+id/edtContactAddress_CreateRecruitersNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_color_white"
+                android:hint="Nhập địa chỉ liên hệ"
+                android:lineHeight="18dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="12dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnUpdate_CreateRecruitersNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bg_color_blue"
+            android:lineHeight="18dp"
+            android:paddingLeft="62dp"
+            android:paddingRight="62dp"
+            android:text="Tạo Tin Đăng"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</ScrollView>

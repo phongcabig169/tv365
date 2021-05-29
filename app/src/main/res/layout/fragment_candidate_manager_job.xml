@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:background="@color/light_gray"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UnusedAttribute">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_container"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        app:tabBackground="@drawable/bg_tablayout"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/blue"
+        app:tabIndicatorHeight="0dp"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        android:background="@android:color/transparent">
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_job_viewed"
+            android:background="@drawable/btn_blue"
+            android:text="Đã xem"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent"
+            android:layout_width="45dp"
+            android:layout_marginStart="20dp" />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_job_saved"
+            android:layout_height="20dp"
+            android:text="Đã lưu"
+
+            android:layout_width="45dp"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_job_sent"
+            android:layout_height="20dp"
+            android:text="Đã nộp"
+            android:layout_width="45dp" />
+    </com.google.android.material.tabs.TabLayout>
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_container"
+        android:layout_marginBottom="66dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

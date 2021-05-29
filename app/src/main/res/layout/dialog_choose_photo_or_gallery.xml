@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/poster_choose_photo_or_gallery"/>
+
+    <Button
+        android:id="@+id/btnGallery_ChoosePhotoOrGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_frame_color_blue"
+        android:lineHeight="17dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Chọn tệp từ thiết bị"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnCamera_ChoosePhotoOrGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_color_yellow"
+        android:lineHeight="17dp"
+        android:paddingLeft="84dp"
+        android:paddingRight="84dp"
+        android:text="Chụp ảnh"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.CandidateSearchActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilCareer"
+            android:layout_toStartOf="@id/tvCancelCandidateSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:layout_marginEnd="18dp"
+            android:background="@android:color/transparent"
+            app:boxBackgroundMode="none"
+            app:hintEnabled="false"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+            app:hintTextColor="@android:color/transparent"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/purple_300"
+            app:startIconDrawable="@drawable/icon_search"
+            app:startIconTint="@color/blue"
+            android:layout_toLeftOf="@id/tvCancelCandidateSearch">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_input_career"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_border_text_purple_300"
+                android:hint="@string/input_career"
+                android:inputType="textPassword"
+                android:paddingTop="10dp"
+                android:textColor="@color/dark_blue"
+                android:textColorHint="@color/blue"
+                android:textCursorDrawable="@drawable/text_cursor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvCancelCandidateSearch"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/cancel"
+            android:textColor="@color/black_200"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_toStartOf="@id/imgTurnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:background="@android:color/transparent"
+            app:boxBackgroundMode="none"
+            app:hintEnabled="false"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+            app:hintTextColor="@android:color/transparent"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/purple_300"
+            app:startIconDrawable="@drawable/icon_province"
+            app:startIconTint="@color/blue"
+            android:layout_toLeftOf="@id/imgTurnBack"
+            android:layout_marginEnd="25dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_input_province"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_border_text_purple_300"
+                android:hint="@string/input_province"
+                android:inputType="textPassword"
+                android:paddingTop="10dp"
+                android:textColor="@color/dark_blue"
+                android:textColorHint="@color/blue"
+                android:textCursorDrawable="@drawable/text_cursor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imgTurnBack"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_turn_back"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="6dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:text="@string/sigup_for_notify"
+            android:textSize="15sp"
+            android:textColor="@color/black_200"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swCandidateSearch"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:checked="true"
+            android:thumb="@drawable/sw_thumb"
+            app:track="@drawable/sw_track" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/gray_200"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@drawable/bg_candidate_search"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvSearchRecently"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:text="@string/search_recently"
+                android:textSize="18sp"
+                android:textColor="@color/purple_300"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginRight="18dp"
+                android:src="@drawable/icon_delete"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
